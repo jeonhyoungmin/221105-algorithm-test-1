@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const Text = "We will never be able to recognize opportunities if we first don’t recognize all that we have and all that we’ve been given."
+    // 23개
+
+    const words = Text.split(' ')
+    console.log(words.length)
+
+    // 단어가 있는 곳과 없는 곳을 구분
+    // 띄어쓰기 전까지의 문자들 곧 단어를 wordsplus에 입력
+    // 띄어쓰기가 인지되면 다음 index에 입력
+    // wordsplus[0] = w, e
+    // wordsplus[1] = w, i , l, l
+    // wordsplus[2] = n, e, v, e, r
+    // function spacingFuc() {
+    //   const wordsplus = []
+    //   const count = 0
+    //   const wordsNum = 0
+    //   for(let i = 0 ; i < Text.length ; i ++) {
+    //     if(Text[i] === '') count ++
+    //     else {
+    //       wordsplus[count][wordsNum] = Text[i]
+    //       wordsNum ++
+    //     }
+    //   }
+    //   return wordsplus
+    // }
+    // console.log(spacingFuc())
+
+    let count = 1
+    for(let i = 0 ; i < Text.length ; i ++) {
+      if(Text[i] === ' ') {
+        count ++
+      }
+    }
+    console.log(count)
+  </script>
+</body>
+</html>
